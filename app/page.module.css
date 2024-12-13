@@ -1,0 +1,20 @@
+.treatmentCard {
+  position: relative;
+  overflow: hidden;
+}
+
+.treatmentCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(59, 130, 246, 0.1), rgba(147, 197, 253, 0.1));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.treatmentCard:hover::before {
+  opacity: 1;
+}
